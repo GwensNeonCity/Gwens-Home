@@ -1,0 +1,217 @@
+body{
+    margin:0;
+
+    min-height:100vh;
+
+    background-image:url("Bilder/Gwen-Lavendel.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    font-family:Arial, sans-serif;
+}
+
+.logo{
+
+    font-size:50px;
+}
+.card{
+
+    width:500px;
+
+    box-shadow: 0 0 15px rgb(255, 126, 147);
+    
+    transition: 0.3s;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255, 129, 129, 0.1);
+
+    backdrop-filter: blur(5px);
+
+    border:1px solid rgba(252, 32, 168, 0.2);
+
+    color:rgb(255, 116, 116);
+
+    text-align:center;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.logo{
+
+    font-size:70px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing:1px;
+
+}
+
+.logo span{
+
+    display:inline-block;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    color:white;
+
+    text-shadow:
+        0 0 5px #ff6982,
+        0 0 10px #ff6982,
+        0 0 20px #ff6982,
+        0 0 40px #ff6982,
+        0 0 80px #ff6982;
+
+    animation:
+        appear .7s forwards,
+        flicker 4s infinite;
+
+}
+
+@keyframes appear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.logo span:nth-child(1){
+    animation-delay:0s, 5s;
+}
+
+.logo span:nth-child(2){
+    animation-delay:.15s, 5.15s;
+}
+
+.logo span:nth-child(3){
+    animation-delay:.30s, 5.30s;
+}
+
+.logo span:nth-child(4){
+    animation-delay:.45s, 5.45s;
+}
+
+.logo span:nth-child(5){
+    animation-delay:.60s, 5.60s;
+}
+
+.logo span:nth-child(6){
+    animation-delay:.75s, 5.75s;
+}
+
+.logo span:nth-child(8){
+    animation-delay:.90s, 5.90s;
+}
+
+.logo span:nth-child(9){
+    animation-delay:1.05s, 6.05s;
+}
+
+.logo span:nth-child(10){
+    animation-delay:1.20s, 6.20s;
+}
+
+.logo span:nth-child(11){
+    animation-delay:1.35s, 6.35s;
+}
+
+.logo span:nth-child(1){ animation-delay:.1s; }
+.logo span:nth-child(2){ animation-delay:1.2s; }
+.logo span:nth-child(3){ animation-delay:2.3s; }
+.logo span:nth-child(4){ animation-delay:.7s; }
+.logo span:nth-child(5){ animation-delay:3.1s; }
+.logo span:nth-child(6){ animation-delay:1.8s; }
+.logo span:nth-child(8){ animation-delay:2.8s; }
+.logo span:nth-child(9){ animation-delay:.4s; }
+.logo span:nth-child(10){ animation-delay:3.7s; }
+.logo span:nth-child(11){ animation-delay:1.5s; }
+
+@keyframes flicker{
+
+    0%,18%,22%,100%{
+
+        opacity:1;
+
+        text-shadow:
+            0 0 5px #ff6982,
+            0 0 10px #ff6982,
+            0 0 20px #ff6982,
+            0 0 40px #ff6982,
+            0 0 80px #ff6982;
+
+    }
+
+    20%{
+
+        opacity:.2;
+
+        text-shadow:none;
+
+    }
+
+    21%{
+
+        opacity:1;
+
+        text-shadow:
+            0 0 5px #ff6982,
+            0 0 10px #ff6982,
+            0 0 20px #ff6982,
+            0 0 40px #ff6982,
+            0 0 80px #ff6982;
+
+    }
+
+}
+
+.container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    margin-bottom:40px;
+
+}
+
+.logo{
+
+    font-family: "Orbitron", sans-serif;
+
+    font-size:70px;
+    font-weight:bold;
+
+}
